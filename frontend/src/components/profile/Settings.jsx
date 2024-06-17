@@ -51,7 +51,7 @@ const Settings = () => {
           <p className="text-3xl md:text-5xl font-semibold text-zinc-500 mb-8">
             Settings
           </p>
-          <div className="flex gap-12">
+          <div className="flex flex-wrap gap-12">
             <div className="">
               <label htmlFor="username">Username</label>
               <p className="p-2 rounded bg-zinc-800 mt-2 font-semibold">

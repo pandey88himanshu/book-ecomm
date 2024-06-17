@@ -42,7 +42,7 @@ const Favourites = () => {
             <p className="text-5xl font-semibold text-zinc-500 mb-8">
               Favourites
             </p>
-            <div className="grid grid-cols-4 gap-4">
+            <div className="flex items-center flex-wrap gap-4">
               {fav.map((item, key) => (
                 <div key={key}>
                   <BookCart data={item} favourite={true} />
