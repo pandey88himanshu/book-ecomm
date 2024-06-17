@@ -1,18 +1,15 @@
 {
   "version": 2,
-  "builds": [{ "src": "./app.js", "use": "@vercel/node" }],
-  "routes": [{ "src": "/.*", "dest": "/" }],
-  "env": {
-    "NODE_ENV": "production"
-  },
-  "headers": [
+  "builds": [
     {
-      "source": "/(.*)",
-      "headers": [
-        { "key": "X-Content-Type-Options", "value": "nosniff" },
-        { "key": "X-Frame-Options", "value": "DENY" }
-      ]
+      "src": "./app.js",
+      "use": "@vercel/node"
     }
   ],
-  "rewrites": [{ "source": "/old-path", "destination": "/new-path" }]
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/"
+    }
+  ]
 }
